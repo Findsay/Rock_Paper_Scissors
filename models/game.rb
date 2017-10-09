@@ -22,14 +22,17 @@ class Game
     else
       return "#{hand1} & #{hand2}"
     end
+
   end
 
   def player(winner, hand1, hand2)
     if hand1 == hand2
       return "Nobody,"
-    elsif hand1 = winner
+
+    elsif hand1 == winner
       return "Player 1"
-    else
+
+    else 
       return "Player 2"
     end
   end

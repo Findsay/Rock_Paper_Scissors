@@ -20,10 +20,18 @@ class Game
       return hand2
 
     else
-      return "nobody...it's a tie!"
+      return "#{hand1} & #{hand2}"
     end
+  end
 
-
+  def player(winner, hand1, hand2)
+    if hand1 == hand2
+      return "Nobody,"
+    elsif hand1 = winner
+      return "Player 1"
+    else
+      return "Player 2"
+    end
   end
 
 

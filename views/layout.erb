@@ -6,13 +6,17 @@
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="/welcome">Welcome<a></li>
-    </ul>
-  <nav>
+  <div class="topnav" id="myNav">
+    <nav>
+      <a href="/welcome">Welcome</a>
+      <nav>
+      </div>
 
-  <%= yield %>
+      <div class="result" id="theResult">
 
-</body>
-</html>
+        <%= yield %>
+
+      </div>
+
+    </body>
+    </html>
